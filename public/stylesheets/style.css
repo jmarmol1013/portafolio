@@ -34,3 +34,36 @@ body{
 .about .btn :hover{
     background-color: #03A696 !important;  
 }
+
+#hexagon {
+    width: 100px;
+    height: 57.735px;
+    background: #03A696;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  #hexagon::before {
+    content: "";
+    position: absolute;
+    top: -28.8675px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 28.8675px solid #03A696;
+
+  }
+  #hexagon::after {
+    content: "";
+    position: absolute;
+    bottom: -28.8675px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 28.8675px solid #03A696;
+  }
+    
