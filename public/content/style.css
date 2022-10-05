@@ -5,7 +5,6 @@ body{
     font-family: 'Abel', sans-serif;
  }
 
-
  .fixed{
     width: 100%; 
 	left: 0; 
@@ -29,10 +28,6 @@ body{
     margin-top: 10px;
     border: 3px solid #03A696; 
     color: #03A696;
-}
-
-.about .btn :hover{
-    background-color: #03A696 !important;  
 }
 
 #hexagon {
@@ -66,4 +61,7 @@ body{
     border-right: 50px solid transparent;
     border-top: 28.8675px solid #03A696;
   }
-    
+  
+.line{
+  margin-bottom: 5px;
+}
