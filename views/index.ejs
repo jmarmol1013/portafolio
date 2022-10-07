@@ -5,7 +5,7 @@
     <div class="col-md-12 align-self-center">
       <div class="text-center">
         <h2 class="intro" style="color: #ffff;">
-          Hello, I am <strong style="color: #F27457;"> Juan Camilo Marmolejo.</Strong><br> I am a full stack developer. <!-- parallax content-->
+          Hello, I am <strong style="color: #F27457;"> Juan Camilo Marmolejo.</Strong><br> I am a full stack developer. 
         </h2>
         <a href="#nav"><button type="button" class="btn btn-outline-primary btn-lg">Let see more about me<i class="bi bi-arrow-down"></i></button></a>
       </div>
@@ -15,11 +15,23 @@
 
 <%-include partials/nav.ejs%> <!-- Nav of the page --> 
 
-<!--Home page information-->
-<% include partials/home.ejs %> 
-
 <!--About me information-->
-<% include partials/about.ejs %> 
+<% include partials/habilities.ejs %> 
 
-<% include partials/services.ejs %> 
-<%-include partials/footer.ejs%> <!--Footer of the page-->
+<div class="row justify-content-center text-center" style="margin-top: 40px;">
+  <div class="col-md-5 col-sm-12">
+    <% include partials/about.ejs %> 
+  </div>
+ <div class="col-md-5 col-sm-12">
+    <% include partials/languages.ejs %> 
+ </div>
+</div>
+
+<!-- Projects of the page -->
+<% include partials/projects.ejs %> 
+
+<!-- Contact of the page -->
+<% include partials/contact.ejs %> 
+
+<!--Footer of the page-->
+<%-include partials/footer.ejs%> 

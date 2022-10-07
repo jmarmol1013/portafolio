@@ -6,11 +6,11 @@ body{
  }
 
  .fixed{
-    width: 100%; 
+  width: 100%; 
 	left: 0; 
 	top: 0; 
 	position: fixed;
-    z-index: 100;
+  z-index: 100;
  }
 
 .parallax{
@@ -23,7 +23,7 @@ body{
     background-size: cover;
 }
 .about .btn{
-    width:100%;
+    width: 300px;
     background-color: white; 
     margin-top: 10px;
     border: 3px solid #03A696; 
