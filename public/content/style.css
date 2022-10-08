@@ -1,10 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+/* google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap'); 
 
 body{
     overflow-x: hidden;
     font-family: 'Abel', sans-serif;
  }
 
+/* animation to displaying the sections */
+ .animation{
+  opacity: 0;
+  transition: all 0.5s;
+ }
+ 
+ .show{
+  animation: showNav 1s;
+ }
+
+ @keyframes show {
+    0%{
+      transform: translateY(-60);
+    }
+    100%{
+      transform: translateX(0);
+    }
+ }
+ 
+ /* fixed navbar */
  .fixed{
   width: 100%; 
 	left: 0; 
@@ -13,6 +34,7 @@ body{
   z-index: 100;
  }
 
+ /* parallax intro */
 .parallax{
     background-color: #253659;
     height: 1000px;
@@ -22,7 +44,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.about .btn{
+
+/* about me bottons */
+.hability .btn{
     width: 300px;
     background-color: white; 
     margin-top: 10px;
@@ -30,6 +54,7 @@ body{
     color: #03A696;
 }
 
+/* about me shapes */
 #hexagon {
     width: 100px;
     height: 57.735px;
@@ -62,6 +87,15 @@ body{
     border-top: 28.8675px solid #03A696;
   }
   
+/* margin between progress lines */
 .line{
   margin-bottom: 5px;
+}
+
+/* Responsive to cellphone */
+@media only screen and (max-width: 600px) {
+  .distance {
+    margin-top: 30px;
+    padding-left: 43px;
+  }
 }

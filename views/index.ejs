@@ -1,37 +1,45 @@
  <% include partials/header.ejs %> <!-- Header of tha page -->
 
-<div class="parallax">
+<div class="parallax section" id="home">
   <div class="row h-100">
     <div class="col-md-12 align-self-center">
       <div class="text-center">
         <h2 class="intro" style="color: #ffff;">
           Hello, I am <strong style="color: #F27457;"> Juan Camilo Marmolejo.</Strong><br> I am a full stack developer. 
         </h2>
-        <a href="#nav"><button type="button" class="btn btn-outline-primary btn-lg">Let see more about me<i class="bi bi-arrow-down"></i></button></a>
+        <a href="#nav"><button type="button" class="btn btn-outline-primary btn-lg">Let see more about me</button></a>
       </div>
     </div>
   </div>
 </div>
 
-<%-include partials/nav.ejs%> <!-- Nav of the page --> 
+<!-- Nav of the page --> 
+<%-include partials/nav.ejs%> 
 
+<div class="animation">
 <!--About me information-->
-<% include partials/habilities.ejs %> 
+  <% include partials/habilities.ejs %> 
 
-<div class="row justify-content-center text-center" style="margin-top: 40px;">
-  <div class="col-md-5 col-sm-12">
-    <% include partials/about.ejs %> 
+  <div class="row justify-content-center text-center" style="margin-top: 40px;">
+    <div class="col-md-5 col-sm-12">
+      <% include partials/about.ejs %> 
+    </div>
+    <div class="col-md-5 col-sm-11 offset-sm-1 distance">
+      <% include partials/languages.ejs %> 
+    </div>
   </div>
- <div class="col-md-5 col-sm-12">
-    <% include partials/languages.ejs %> 
- </div>
+  
 </div>
 
+<div class="animation">
 <!-- Projects of the page -->
 <% include partials/projects.ejs %> 
+</div>
 
+<div class="animation">
 <!-- Contact of the page -->
 <% include partials/contact.ejs %> 
+</div>
 
 <!--Footer of the page-->
 <%-include partials/footer.ejs%> 
