@@ -13,15 +13,23 @@
         </div>
         <div class="col-md-6 col-sm-12">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Name" aria-label="name" name="name" id="nameText" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="First name" aria-label="fname" name="fname" id="fnameText" aria-describedby="basic-addon1" required>
             </div>
-              
+           
             <div class="input-group mb-3">
-                <input type="email" class="form-control" placeholder="Mail" aria-label="Mail" name="mail" id="mailText" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="lname" name="lname" id="lnameText" aria-describedby="basic-addon1" required>
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="tel" class="form-control" placeholder="Phone number" aria-label="phone" name="phonr" id="PhoneNumber" aria-describedby="basic-addon1" required>
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Mail" aria-label="Mail" name="mail" id="mailText" aria-describedby="basic-addon1" required>
             </div>
 
             <div class="input-group">
-                <textarea class="form-control" aria-label="With textarea" placeholder="Your message" name="message" id="messageText"></textarea>
+                <textarea class="form-control" aria-label="With textarea" placeholder="Your message" name="message" id="messageText" required></textarea>
             </div>
             <a href="/"><button type="submit" class="btn btn-outline-dark" value="Submit" style="margin: 20px 0;">Submit</button></a>
         </div>
