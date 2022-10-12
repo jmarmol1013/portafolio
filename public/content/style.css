@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+/* google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap'); 
 
 body{
     overflow-x: hidden;
     font-family: 'Abel', sans-serif;
  }
 
+ /* fixed navbar */
  .fixed{
-    width: 100%; 
+  width: 100%; 
 	left: 0; 
 	top: 0; 
 	position: fixed;
-    z-index: 100;
+  z-index: 100;
  }
 
+ /* parallax intro */
 .parallax{
     background-color: #253659;
     height: 1000px;
@@ -22,14 +25,17 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.about .btn{
-    width:100%;
+
+/* about me bottons */
+.greenBtn{
+    width: 300px;
     background-color: white; 
     margin-top: 10px;
     border: 3px solid #03A696; 
     color: #03A696;
 }
 
+/* about me shapes */
 #hexagon {
     width: 100px;
     height: 57.735px;
@@ -62,6 +68,8 @@ body{
     border-top: 28.8675px solid #03A696;
   }
   
+/* margin between progress lines */
 .line{
   margin-bottom: 5px;
 }
+

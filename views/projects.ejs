@@ -1,0 +1,163 @@
+<% include partials/header.ejs %> <!-- Header of tha page -->
+
+<%-include partials/nav.ejs%> <!-- Nav of the page --> 
+
+
+<div class="conatiner">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center" style="margin-top: 40px;">
+            <h1>Projects</h1>
+        </div>
+        <div class="col-auto">
+            <div class="row">
+                <div class="col-8">
+                    <h3>Clouds</h3>
+                    <h5 style="color:#04BF9D;">JS / Node.Js </h5>
+                </div>
+                <div class="col-4 align-self-center">
+                    <button style="width: 100%;" data-bs-toggle="modal" data-bs-target="#projectClouds" class="btn btn-primary greenBtn" onmouseover="this.style.backgroundColor='#03A696'; this.style.borderColor='#03A696';" onmouseout="this.style.backgroundColor='#ffff'">More Info</button>
+                </div>
+                <div class="modal fade" id="projectClouds" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="/assets/images/Clouds.png" class="d-block w-100" alt="Clouds description 1" style="height: 400px;">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/assets/images/Clouds2.jpg" class="d-block w-100" alt="Clouds description 2" style="height: 400px;">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/assets/images/Clouds3.png" class="d-block w-100" alt="Clouds description 3" style="height: 400px;">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        <div class="modal-header">
+                          <h3 class="modal-title" id="staticBackdropLabel">Clouds Project</h3>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Weather information App</h5>
+                            <p>Clouds is a Web App with HTML, CSS,Bootstrap, JavaScript, Jquery and Node.Js that gives you real time information about the weather in your current location and the user can search for a city around the world to display the weather information.Moreover, it is build with the GeoLocalization API of JavaScript and weatherstack free API.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="https://clouds-jmarmol1013.herokuapp.com/" target="_blank"><button type="button" class="btn btn-outline-info"><i class="bi bi-box-arrow-up-right"></i>    View site</button></a>
+                          <a href="https://github.com/jmarmol1013/weatherApp" target="_blank"><button type="button" class="btn btn-outline-info"><i class="bi bi-github"></i>  Git Hub</button></a>
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <img src="/assets/images/Clouds.png" class="rounded d-block" alt="Clouds Image Project" style="height: 400px; margin-bottom:50px;">
+        </div>
+        <div class="col-auto">
+            <div class="row">
+                <div class="col-8">
+                    <h3>Gallery-Jquery-Ajax</h3>
+                    <h5 style="color:#04BF9D;">JS / Ajax </h5>
+                </div>
+                <div class="col-4 align-self-center">
+                    <button style="width: 100%;" data-bs-toggle="modal" data-bs-target="#projectGallery" class="btn btn-primary greenBtn" onmouseover="this.style.backgroundColor='#03A696'; this.style.borderColor='#03A696';" onmouseout="this.style.backgroundColor='#ffff'">More Info</button>
+                </div>
+                <div class="modal fade" id="projectGallery" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel2">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="/assets/images/gallery.png" class="d-block w-100" alt="Gallery description 1" style="height: 400px;">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/assets/images/collection.png" class="d-block w-100" alt="Gallery description 2" style="height: 400px;">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        <div class="modal-header">
+                          <h3 class="modal-title" id="staticBackdropLabel">Gallery-Jquery-Ajax</h3>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Weather information App</h5>
+                            <p>Create an HTML that display a image gallery, where the user can move the image if they want to right or left and if the user do not press any button, the image will change with a timeout. Use of AJAX to request the image of a JSON file and display it.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="https://github.com/jmarmol1013/Gallery-Jquery-Ajax" target="_blank"><button type="button" class="btn btn-outline-info"><i class="bi bi-github"></i>  Git Hub</button></a>
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <img src="/assets/images/gallery.png" class="rounded d-block" alt="Clouds Image Project" style="height: 400px; margin-bottom:50px;">
+        </div>
+        
+        <div class="col-auto">
+            <div class="row">
+                <div class="col-8">
+                    <h3>DataBase System</h3>
+                    <h5 style="color:#04BF9D;">Oracle / Visio</h5>
+                </div>
+                <div class="col-4 align-self-center">
+                    <button style="width: 100%;" data-bs-toggle="modal" data-bs-target="#projectDatabase" class="btn btn-primary greenBtn" onmouseover="this.style.backgroundColor='#03A696'; this.style.borderColor='#03A696';" onmouseout="this.style.backgroundColor='#ffff'">More Info</button>
+                </div>
+                <div class="modal fade" id="projectDatabase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel3">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="/assets/images/database.png" class="d-block w-100" alt="DataBase description 1" style="height: 400px;">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/assets/images/database2.png" class="d-block w-100" alt="DataBase description 2" style="height: 400px;">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        <div class="modal-header">
+                          <h3 class="modal-title" id="staticBackdropLabel">DataBase System</h3>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Clothing Store DataBase System</h5>
+                            <p>Final team project of DataBase, create a clothing store database system to track their shipments and keep information about their customers, employees, items and orders of the company. Create a introduction of the problem and how to solute it, an ERM diagram, the tables needed, insert the information in each table and the select statements with the information that is goign to help the owner of the store.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="https://github.com/jmarmol1013/Clothings-Store-Project-DataBase" target="_blank"><button type="button" class="btn btn-outline-info"><i class="bi bi-github"></i>  Git Hub</button></a>
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <img src="/assets/images/database.png" class="rounded d-block" alt="Clouds Image Project" style="height: 400px; margin-bottom:50px;">
+        </div>
+    </div>
+</div>
+
+<%-include partials/footer.ejs%> <!--Footer of the page-->
