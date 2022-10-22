@@ -1,0 +1,38 @@
+<% include ../partials/header.ejs %> <!-- Header of tha page -->
+
+<%-include ../partials/nav.ejs%> <!-- Nav of the page --> 
+
+<main>
+    <div class="row justify-content-center text-center">
+        <h1>Contact List</h1>
+        <div class="col-6">
+        <a class="btn btn-outline-warning" href="/contact-list/add" role="button">Add Contact</a>
+        <table class="table table-hover align-middle">
+            <!-- Header Row-->
+            <thead>
+                <tr>
+                    <th class="text-center">Contact Name</th>
+                    <th class="text-center">Contact Phone</th>
+                    <th class="text-center">Contact Mail</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                   <!-- Repeatable Template Row -->
+                <% for(let count = 0; count < contactList.length; count++) { %>
+                    <tr>
+                        <td class="text-center"><%= contactList[count].name %></td>
+                        <td class="text-center"><%= contactList[count].phone %></td>
+                        <td class="text-center"><%= contactList[count].mail %></td>
+                        <td class="text-center"><a class="btn btn-outline-info" href="/contact-list/edit/<%= contactList[count]._id %> " role="button">Edit</a></td>
+                        <td class="text-center"><a class="btn btn-outline-danger" href="/contact-list/delete/<%= contactList[count]._id %> " role="button">Delete</a></td>
+                    </tr>
+                <%} %>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</main>
+
+<%-include ../partials/footer.ejs%> <!--Footer of the page-->
