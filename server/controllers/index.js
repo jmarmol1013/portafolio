@@ -28,7 +28,7 @@ module.exports.displayContactPage = (req, res, next) => {
 
 module.exports.displayLogInPage = (req,res,next) =>{
     if(!req.User){
-        res.render('auth/login',{
+        res.render('auth/logIn',{
             title : 'LogIn',
             messages : req.flash('LoginMessage'),
             displayName : req.User ? req.User.displayName : '',
