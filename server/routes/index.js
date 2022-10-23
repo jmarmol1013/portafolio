@@ -31,4 +31,6 @@ router.get('/registration',indexController.displayRegistrationPage);
 // POST registration page
 router.post('/registration',indexController.processRegistraionPage);
 
+router.get('/logout',indexController.perfromLogOut);
+
 module.exports = router;

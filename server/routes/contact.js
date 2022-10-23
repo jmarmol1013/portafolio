@@ -6,16 +6,21 @@ let passport = require('passport');
 let contact = require('../models/contacts');
 let contactController = require('../controllers/contacts');
 
-router.get('/', contactController.displayContactList);
+function requireAuth(req,res,next) {
+    if(!req.isAuthenticated()) return res.redirect('/login')
+    next();
+}
 
-router.get('/add',contactController.displayAddPage);
+router.get('/', requireAuth,contactController.displayContactList);
 
-router.post('/add',contactController.processAddPage);
+router.get('/add',requireAuth,contactController.displayAddPage);
 
-router.get('/edit/:id',contactController.displayEditPage);
+router.post('/add',requireAuth,contactController.processAddPage);
 
-router.post('/edit/:id',contactController.processEditPage);
+router.get('/edit/:id',requireAuth,contactController.displayEditPage);
 
-router.get('/delete/:id',contactController.performDelete);
+router.post('/edit/:id',requireAuth,contactController.processEditPage);
+
+router.get('/delete/:id',requireAuth,contactController.performDelete);
 
 module.exports = router;

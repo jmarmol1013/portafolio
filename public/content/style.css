@@ -35,6 +35,11 @@ body{
     border: 3px solid #03A696; 
     color: #03A696;
 }
+.styleBtn{
+  background-color: white; 
+  border: 3px solid #03A696; 
+  color: #03A696;
+}
 
 /* about me shapes */
 #hexagon {
@@ -74,3 +79,15 @@ body{
   margin-bottom: 5px;
 }
 
+
+/* Color table  */
+table tr:nth-child(odd) td{
+  background: #ffff;
+}
+table tr:nth-child(even) td{
+   background:#04BF9D;
+}
+
+.navbar-text{
+  text-align: right;
+}

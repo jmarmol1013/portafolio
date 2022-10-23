@@ -31,7 +31,8 @@ module.exports.displayLogInPage = (req,res,next) =>{
         res.render('auth/login',{
             title : 'LogIn',
             messages : req.flash('LoginMessage'),
-            displayName : req.User ? req.User.displayName : ''
+            displayName : req.User ? req.User.displayName : '',
+            currentUser : req.User
         });
     } else{
         return res.redirect('/')
@@ -44,7 +45,8 @@ module.exports.processLogInPage = (req,res,next) =>{
         if(!User){
             req.flash(
                 'loginMessage',
-                'authentication Error'
+                'authentication Error',
+                'errors'
             );
             return res.redirect('login');
         }
@@ -61,7 +63,7 @@ module.exports.displayRegistrationPage = (req,res,next) =>{
         res.render('auth/registration',{
             title : 'Register',
             messages : req.flash('RegisterMessage'),
-            displayName : req.User ? req.User.displayName :''
+            displayName : req.User ? req.User.displayName :'',
         });
     }else{
         return res.redirect('/');
@@ -97,4 +99,11 @@ module.exports.processRegistraionPage = (req,res,next) =>{
             })
         }
     });
+}
+
+module.exports.perfromLogOut = (req,res,next) =>{
+    req.logout(function(err) {
+        if (err) { return next(err); }
+        res.redirect('/');
+      });
 }

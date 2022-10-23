@@ -58,7 +58,11 @@ passport.use(User.createStrategy());
 // serialize and deserialize the user info 
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
-
+// pass through user data on every route
+app.use((req,res,next) => {
+  res.locals.currentUser = req.user;
+  next();
+});
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

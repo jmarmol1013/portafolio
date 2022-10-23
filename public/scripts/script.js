@@ -10,7 +10,7 @@ window.addEventListener("scroll",()=>{
     {
         console.log("App Started...");
 
-        let deleteButtons = document.querySelectorAll('.btn-outline-danger');
+        let deleteButtons = document.querySelectorAll('.btn-danger');
         
         for(button of deleteButtons)
         {
@@ -27,3 +27,4 @@ window.addEventListener("scroll",()=>{
     window.addEventListener("load", Start);
 
 })();
+
